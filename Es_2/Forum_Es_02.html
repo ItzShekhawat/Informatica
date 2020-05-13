@@ -1,0 +1,37 @@
+<!---2.	In un form chiedere il nome e il cognome , il sesso tramite oggetti radio reimpostato su maschio, 
+    se è una donna far comparire una check box con "Sposata". 
+    Al submit del form controllare che abbia inserito sia il nome che il cognome e quindi in base all'ora corrente dire "Buongiorno" o "Buonasera" (dopo le 19)
+    e in base al sesso aggiungere signor, signorina, signora (es "Buonasera Signora Roberta Molinari" se sono le 20)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="forum_Es_02.js"></script>
+    <title>Forum</title>
+</head>
+<body>
+    <h2>Forum</h2>
+    <form>
+
+        Nome: <input type = "text" id = "name"/><br>  
+        Cognome: <input type = "text" id = "surname"/><br>
+        <!--Radio-->
+        <input type="radio" id="male">
+        <label for="male">Uomo</label><br>
+        <input type="radio" id="female" onchange="married()">
+        <label for="female">Donna</label><br>
+    
+        <div id="myDiv" style="display:none;">
+            <input type="checkbox" id="Si">
+            <label for="si">Si</label>
+            <input type="checkbox" name="no" id="No">
+            <label for="no" >No</label>
+        </div>
+
+        <button onclick="saluto()">Invia</button>
+
+    </form>
+</body>
+</html>
