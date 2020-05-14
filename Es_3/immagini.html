@@ -1,0 +1,38 @@
+<!--Inserire 6 immagini allineate su 3 livelli contenenti degli oggetti. 
+    Al passaggio del mouse sulle immagini, in un area colorata sotto di essi in cui è inizialmente scritto 
+    "passa il mouse sull'oggetto per veder il suo nome in inglese", 
+    deve apparire il nome degli oggetti in inglese (in grassetto è corsivo). 
+    Quando il mouse non è sulle immagini deve ritornare la scritta iniziale.-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Immagini</title>
+        <script type="text/javascript" src="immagini.js" ></script>
+    </head>
+    <body>
+        <h2>What to know the word ?</h2>
+        <table>
+            <tr>
+                <th> <img  id="img1" src="banana.jpg" width="130px" height="130px" onmouseover="namethis1('img1')" onmouseout="nonTradurre()" ></th>
+                <th><img id="img2" src="mela.jpg" alt="" width="130px" height="130px" onmouseover="namethis1('img2')" onmouseout="nonTradurre()" ></th>
+            </tr>
+            
+            <tr>
+                <th> <img id="img3"  src="auto.jpg" alt="" width="130px" height="130px" onmouseover="namethis1('img3')" onmouseout="nonTradurre()" ></th>
+                <th><img id="img4" src="moto.jpg" alt="" width="130px" height="130px" onmouseover="namethis1('img4')" onmouseout="nonTradurre()" ></th>
+            </tr>
+            <tr>
+                <th> <img  id="img5" src="cane.webp" alt="" width="130px" height="130px" onmouseover="namethis1('img5')" onmouseout="nonTradurre()" ></th>
+                <th><img id="img6"  src="gatto.jpg" alt=""width="130px" height="130px" onmouseover="namethis1('img6')" onmouseout="nonTradurre()" ></th>
+            </tr>
+        </table>
+        
+        <p id="result" style="background-color: brown;" > 
+            Passa il mouse sull'oggetto per veder il suo nome in inglese  </p>
+        
+        
+    </body>
+    </html>
